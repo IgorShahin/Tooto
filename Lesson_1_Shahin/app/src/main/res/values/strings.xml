@@ -2,4 +2,7 @@
     <string name="app_name">Lesson_1_Shahin</string>
     <string name="button_add">Add</string>
     <string name="button_output">List output</string>
+    <string name="button_task1">Task 1</string>
+    <string name="button_task2">Task 2</string>
+    <string name="warning_input">Enter correct data</string>
 </resources>

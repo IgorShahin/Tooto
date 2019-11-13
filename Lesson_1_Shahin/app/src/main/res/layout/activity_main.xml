@@ -6,35 +6,25 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/buttonTask1"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:inputType="textPersonName"
-        android:imeOptions="actionSearch"
+        android:layout_marginTop="246dp"
+        android:text="@string/button_task1"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/buttonOutput"
+        android:id="@+id/buttonTask2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:text="@string/button_output"
+        android:layout_marginTop="10dp"
+        android:text="@string/button_task2"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
-
-    <TextView
-        android:id="@+id/textViewList"
-        style="@style/TextViewList"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="15dp"
-        android:text=""
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonOutput" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonTask1" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
