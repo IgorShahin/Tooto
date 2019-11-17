@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Задание_2_Шахин</string>
+    <string name="task_1_name">Задание 1</string>
+    <string name="task_2_name">Задание 2</string>
+    <string name="quatrain">Забыв и рощу и свободу,\n
+                            Невольный чижик надо мной\n
+                            Зерно клюет и брызжет воду,\n
+                            И песнью тешится живой.</string>
+</resources>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Lesson_2_Shahin</string>
+    <string name="task_1_name">Task 1</string>
+    <string name="task_2_name">Task 2</string>
+    <string name="quatrain">Sorry, there is nothing</string>
+    <string name="button_name" translatable="false">Боль и страдание</string>
+</resources>
