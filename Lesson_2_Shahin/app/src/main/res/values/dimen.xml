@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Red rectangle in layer list -->
+    <dimen name="padding_red_rectangle_top">0dp</dimen>
+    <dimen name="padding_red_rectangle_left">0dp</dimen>
+    <dimen name="padding_red_rectangle_right">30dp</dimen>
+    <dimen name="padding_red_rectangle_bottom">30dp</dimen>
+
+    <!-- Green rectangle in layer list -->
+    <dimen name="padding_green_rectangle_top">30dp</dimen>
+    <dimen name="padding_green_rectangle_left">30dp</dimen>
+    <dimen name="padding_green_rectangle_right">0dp</dimen>
+    <dimen name="padding_green_rectangle_bottom">0dp</dimen>
+</resources>

@@ -3,5 +3,7 @@
     <string name="task_1_name">Task 1</string>
     <string name="task_2_name">Task 2</string>
     <string name="quatrain">Sorry, there is nothing</string>
-    <string name="button_name" translatable="false">Боль и страдание</string>
+    <string name="button_name_task_1" translatable="false">Боль и страдание</string>
+    <string name="button_name_task_2" translatable="false">Кнопка 1</string>
+
 </resources>

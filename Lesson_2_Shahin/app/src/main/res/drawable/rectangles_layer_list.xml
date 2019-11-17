@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/Canvas">
+        <shape android:shape="rectangle">
+            <size
+                android:width="100dp"
+                android:height="100dp" />
+        </shape>
+    </item>
+
+    <item
+        android:id="@+id/redRectangle"
+        android:bottom="@dimen/padding_red_rectangle_bottom"
+        android:left="@dimen/padding_red_rectangle_left"
+        android:right="@dimen/padding_red_rectangle_right"
+        android:top="@dimen/padding_red_rectangle_top">
+        <shape android:shape="rectangle">
+            <size
+                android:width="60dp"
+                android:height="60dp" />
+            <solid android:color="@color/colorRedRectangle" />
+        </shape>
+    </item>
+
+    <item
+        android:id="@+id/greenRectangle"
+        android:bottom="@dimen/padding_green_rectangle_bottom"
+        android:left="@dimen/padding_green_rectangle_left"
+        android:right="@dimen/padding_green_rectangle_right"
+        android:top="@dimen/padding_green_rectangle_top">
+        <shape android:shape="rectangle">
+            <size
+                android:width="60dp"
+                android:height="60dp" />
+            <solid android:color="@color/colorGreenRectangle" />
+        </shape>
+    </item>
+
+</layer-list>

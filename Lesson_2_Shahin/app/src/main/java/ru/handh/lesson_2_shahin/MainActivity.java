@@ -1,12 +1,10 @@
 package ru.handh.lesson_2_shahin;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.Button;
 
-import butterknife.BindView;
+import androidx.appcompat.app.AppCompatActivity;
+
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
@@ -28,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
     @OnClick(R.id.buttonTask2)
     void buttonTask2Click(){
-
+        Intent intent = Task2Activity.createStartIntent(MainActivity.this);
+        startActivity(intent);
     }
 }
