@@ -1,6 +1,5 @@
 package ru.handh.lesson_3_shahin;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -17,10 +16,6 @@ public class MainActivity extends AppCompatActivity {
     @BindView(R.id.toolbar)
     Toolbar toolbar;
 
-    public static Intent createStartIntent(Context context){
-        return new Intent(context, MainActivity.class);
-    }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,12 +25,20 @@ public class MainActivity extends AppCompatActivity {
 
         setSupportActionBar(toolbar);
         ActionBar actionBar = getSupportActionBar();
-        actionBar.setTitle("Главное меню");
+        if (actionBar != null) {
+            actionBar.setTitle(R.string.toolbar_title_main);
+        }
     }
 
     @OnClick(R.id.buttonConstraint)
-    void onClickConstraint(){
+    void onClickConstraint() {
         Intent intent = ConstraintActivity.createStartIntent(MainActivity.this);
+        startActivity(intent);
+    }
+
+    @OnClick(R.id.buttonLinear)
+    void onClickLinear() {
+        Intent intent = LinearActivity.createStartIntent(MainActivity.this);
         startActivity(intent);
     }
 }

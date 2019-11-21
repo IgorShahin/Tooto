@@ -1,6 +1,113 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="28dp"
+    tool:context=".LinearActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/TextStyle3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/subtitle_profile" />
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/HintStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="31dp"
+        android:text="@string/name_profile" />
+
+    <TextView
+        android:id="@+id/textViewName"
+        style="@style/TextStyle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="2dp"
+        tool:text="Анастасия" />
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/HintStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="26dp"
+        android:text="@string/surname_profile" />
+
+    <TextView
+        android:id="@+id/textViewSurname"
+        style="@style/TextStyle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="2dp"
+        tool:text="Антонина" />
+
+    <TextView
+        android:id="@+id/textView4"
+        style="@style/HintStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="26dp"
+        android:text="@string/email_profile" />
+
+    <TextView
+        android:id="@+id/textViewEmail"
+        style="@style/TextStyle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="2dp"
+        tool:text="anykee.box@gmail.ru" />
+
+    <TextView
+        android:id="@+id/textView5"
+        style="@style/HintStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="26dp"
+        android:text="@string/login_profile" />
+
+    <TextView
+        android:id="@+id/textViewLogin"
+        style="@style/TextStyle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="2dp"
+        tool:text="HIE023UOI88" />
+
+    <include
+        android:id="@+id/buttonEditRegion"
+        layout="@layout/view_region"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp" />
+
+    <Button
+        android:id="@+id/buttonExitAccount"
+        style="@style/TextStyle2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:drawableStart="@drawable/ic_menu_exit"
+        android:drawablePadding="31dp"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingTop="29dp"
+        android:paddingBottom="29dp"
+        android:text="@string/exit_account"
+        android:textAllCaps="false" />
 
 </LinearLayout>

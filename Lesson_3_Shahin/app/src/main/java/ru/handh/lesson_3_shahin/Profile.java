@@ -7,6 +7,16 @@ public class Profile {
     private String email;
     private String login;
     private String region;
+    private int numberCard;
+
+    public Profile(String name, String surname, String email, String login, String region, int numberCard) {
+        this.name = name;
+        this.surname = surname;
+        this.email = email;
+        this.login = login;
+        this.region = region;
+        this.numberCard = numberCard;
+    }
 
     public String getName() {
         return name;
@@ -46,5 +56,13 @@ public class Profile {
 
     public void setRegion(String region) {
         this.region = region;
+    }
+
+    public int getNumberCard() {
+        return numberCard;
+    }
+
+    public void setNumberCard(int numberCard) {
+        this.numberCard = numberCard;
     }
 }

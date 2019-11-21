@@ -1,11 +1,15 @@
 <resources>
     <string name="app_name">Lesson_3_Shahin</string>
     <string name="id_profile">Карта №7898769 \nСпециалист</string>
-    <string name="toolbar_title">Личный профиль</string>
+    <string name="toolbar_title_profile">Личный профиль</string>
+    <string name="toolbar_title_main">Главное меню</string>
     <string name="login_profile">Логин</string>
     <string name="email_profile">E-mail</string>
     <string name="surname_profile">Фамилия</string>
     <string name="name_profile">Имя</string>
     <string name="subtitle_profile">Личные данные</string>
     <string name="exit_account">Выйти из аккаунта</string>
+    <string name="click_exit">click logout</string>
+    <string name="click_region">click edit region</string>
+    <string name="click_menu">click edit menu</string>
 </resources>

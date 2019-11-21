@@ -10,4 +10,4 @@
     android:background="@color/sunflower"
     app:layout_collapseMode="pin"
     app:layout_scrollFlags="scroll|enterAlways"
-    tool:title="@string/toolbar_title" />
+    tool:title="@string/toolbar_title_profile" />
