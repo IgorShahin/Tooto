@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardViewDetail"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardCornerRadius="2dp">
+
+    <ImageView
+        android:id="@+id/imageDetailInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cropToPadding="true"
+        android:paddingStart="8dp"
+        android:paddingTop="8dp"
+        android:scaleType="fitStart"
+        tools:src="@drawable/ic_bill" />
+
+    <TextView
+        android:id="@+id/textViewDetailTitle"
+        style="@style/TextStyleTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="71dp"
+        android:maxLines="1"
+        tools:text="@string/title_receipt" />
+
+    <TextView
+        android:id="@+id/textViewDetailInfo"
+        style="@style/TextStyleInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="97dp"
+        android:layout_marginBottom="16dp"
+        android:maxLines="1"
+        tools:text="@string/info_receipt" />
+
+</androidx.cardview.widget.CardView>

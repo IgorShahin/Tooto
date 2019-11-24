@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Lesson_4_Shahin</string>
+    <string name="title_toolbar">Моя квартира</string>
+    <string name="title_receipt">Квитанция</string>
+    <string name="title_meter">Счетчики</string>
+    <string name="title_installment_plan">Рассрочка</string>
+    <string name="title_insurance">Страхование</string>
+    <string name="title_internet_and_tv">Интернет и ТВ</string>
+    <string name="title_intercom">Домофон</string>
+    <string name="title_security">Охрана</string>
+    <string name="title_contacts">Контакты УК и служб</string>
+    <string name="title_my_application">Мои заявки</string>
+    <string name="title_memo">Памятка жителя А101</string>
+    <string name="info_receipt">- 40 080,55 ₽</string>
+    <string name="info_meter">Подайте показания</string>
+    <string name="info_installment_plan">Сл. платеж 25.02.2018</string>
+    <string name="info_insurance">Полис до 12.01.2019</string>
+    <string name="info_internet_and_tv">Баланс 350 ₽</string>
+    <string name="info_intercom">Подключен</string>
+    <string name="info_security">нет</string>
+</resources>
