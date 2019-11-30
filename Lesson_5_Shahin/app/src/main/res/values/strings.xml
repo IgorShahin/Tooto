@@ -1,6 +1,15 @@
 <resources>
     <string name="app_name">Lesson_5_Shahin</string>
     <string name="title_button_activity_fourth">got to 4 again</string>
-    <string name="title_actiity_1">Activity 1</string>
-    <string name="title_activity_4">Activity 4</string>
+    <string name="button_deliver_result">deliver result</string>
+    <string name="button_save">Сохранить</string>
+    <string name="title_button_open_fifth_activity">go to 5</string>
+    <string name="title_button_open_main_activity">go to 1</string>
+    <string name="title_button_open_third_activity">go to 3</string>
+    <string name="title_button_open_fourth_activity">go to 4</string>
+    <string name="title_button_open_second_activity">got to 2</string>
+    <string name="title_button_open_sixth_activity">got to 6</string>
+    <string name="all_services">все</string>
+    <string name="title_services">Услуги</string>
+    <string name="title_button_services">Предложить услугу</string>
 </resources>

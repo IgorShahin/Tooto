@@ -61,4 +61,6 @@
     <color name="pale_grey_two">#f2f5f6</color>
     <color name="greyish_brown_three">#3f3f3f</color>
     <color name="dark_54">#881d1e25</color>
+    <color name="white_five">#dcdcdc</color>
+    <color name="almost_black">#4003060a</color>
 </resources>

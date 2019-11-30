@@ -22,6 +22,9 @@ public class MainActivity extends AppCompatActivity {
     @BindView(R.id.buttonOpenActivity2)
     Button buttonOpenActivity2;
 
+    @BindView(R.id.buttonOpenActivity6)
+    Button buttonOpenActivity6;
+
     public static Intent createInstance(Context context) {
         return new Intent(context, MainActivity.class);
     }
@@ -38,14 +41,6 @@ public class MainActivity extends AppCompatActivity {
 
         buttonOpenActivity4.setOnClickListener(view -> startActivity(FourthActivity.createInstance(MainActivity.this, System.currentTimeMillis())));
         buttonOpenActivity2.setOnClickListener(view -> startActivity(SecondActivity.createInstance(MainActivity.this)));
-    }
-
-    @Override
-    protected void onNewIntent(Intent intent) {
-        super.onNewIntent(intent);
-        setIntent(intent);
-
-        buttonOpenActivity4.setOnClickListener(view -> startActivity(FourthActivity.createInstance(MainActivity.this, System.currentTimeMillis())));
-        buttonOpenActivity2.setOnClickListener(view -> startActivity(SecondActivity.createInstance(MainActivity.this)));
+        buttonOpenActivity6.setOnClickListener(view -> startActivity(SixthActivity.createInstance(MainActivity.this)));
     }
 }

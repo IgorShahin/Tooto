@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:id="@+id/constraintAdvertising"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground">
+
+    <com.github.siyamed.shapeimageview.mask.PorterShapeImageView
+        android:id="@+id/imageViewAdvertising"
+        android:layout_width="@dimen/size_main_img_advertising"
+        android:layout_height="@dimen/size_main_img_advertising"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:siShape="@drawable/shape_rounded_rectangle"
+        app:siSquare="true" />
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textColor="@color/warm_grey_two"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/imageViewAdvertising"
+        app:layout_constraintTop_toTopOf="parent"
+        tool:text="Царь пышка" />
+
+    <TextView
+        android:id="@+id/textViewInfo"
+        style="@style/AllTextTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/charcoal_grey"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/imageViewAdvertising"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle"
+        tool:text="Скидка 10% на выпечку \n по коду" />
+
+    <TextView
+        android:id="@+id/textViewAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/warm_grey_two"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/imageViewAdvertising"
+        app:layout_constraintTop_toBottomOf="@+id/textViewInfo"
+        tool:text="Лермонтовский пр, 52, МО №1" />
+
+    <FrameLayout
+        android:id="@+id/frameRecyclerMenu"
+        android:layout_width="@dimen/width_recycler_menu"
+        android:layout_height="@dimen/height_recycler_menu"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="8dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_more" />
+
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

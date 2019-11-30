@@ -60,9 +60,8 @@ public class FourthActivity extends AppCompatActivity {
     @Override
     protected void onNewIntent(Intent intent) {
         super.onNewIntent(intent);
+        setIntent(intent);
         extras = intent.getExtras();
-
-        buttonActivity4.setOnClickListener(view -> startActivity(FourthActivity.createInstance(FourthActivity.this, System.currentTimeMillis())));
 
         if (extras != null) {
             Date date = new Date(extras.getLong(EXTRA_TIME));

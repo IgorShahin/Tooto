@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearThirdActivity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ThirdActivity"
-    android:id="@+id/linearThirdActivity">
+    tools:context=".ThirdActivity">
 
     <include layout="@layout/view_toolbar" />
 
@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:text="go to 5"
+        android:text="@string/title_button_open_fifth_activity"
         android:textAllCaps="false" />
 
     <Button
@@ -22,7 +22,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:text="go to 1"
+        android:text="@string/title_button_open_main_activity"
         android:textAllCaps="false" />
 
 </LinearLayout>

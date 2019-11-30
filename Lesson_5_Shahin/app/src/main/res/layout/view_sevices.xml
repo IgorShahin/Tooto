@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearAllService"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_panel_services">
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/AllTextTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="17dp"
+            android:text="@string/title_services"
+            android:textColor="@color/charcoal_grey"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewAllServices"
+            style="@style/AllTextTheme"
+            android:layout_width="@dimen/size_text_all_services"
+            android:layout_height="@dimen/size_text_all_services"
+            android:layout_marginStart="259dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="17dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:gravity="center"
+            android:text="@string/all_services"
+            android:textAllCaps="true"
+            android:textColor="@color/tealish"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/textView2"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/buttonOfferService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:drawableStart="@drawable/ic_partnership"
+        android:background="@drawable/selector_btn_services"
+        android:drawablePadding="14dp"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/padding_button_services"
+        android:text="@string/title_button_services"
+        android:textAllCaps="false"
+        android:textColor="@color/charcoal_grey"
+        android:textSize="16sp" />
+
+</LinearLayout>

@@ -12,6 +12,8 @@ import androidx.appcompat.widget.Toolbar;
 
 import com.google.android.material.snackbar.Snackbar;
 
+import java.util.Objects;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
@@ -55,7 +57,9 @@ public class ThirdActivity extends AppCompatActivity {
 
         if (requestCode == MESSAGE_REQUEST) {
             if (resultCode == RESULT_OK) {
-                Snackbar.make(linearLayout, data.getStringExtra("result"), Snackbar.LENGTH_SHORT).show();
+                if (data != null) {
+                    Snackbar.make(linearLayout, Objects.requireNonNull(data.getStringExtra("result")), Snackbar.LENGTH_SHORT).show();
+                }
             }
         }
     }

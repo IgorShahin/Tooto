@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:text="go to 3"
+        android:text="@string/title_button_open_third_activity"
         android:textAllCaps="false" />
 
 </LinearLayout>

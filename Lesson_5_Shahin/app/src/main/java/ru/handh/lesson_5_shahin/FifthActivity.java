@@ -50,10 +50,12 @@ public class FifthActivity extends AppCompatActivity {
         toolbar.setNavigationOnClickListener(view -> finish());
 
         buttonDeliverResult.setOnClickListener(view -> {
-            Intent resultIntent = new Intent();
-            resultIntent.putExtra("result", editTextActivityFifth.getText().toString());
-            setResult(RESULT_OK, resultIntent);
-            finish();
+            if (!editTextActivityFifth.getText().toString().equals("")) {
+                Intent resultIntent = new Intent();
+                resultIntent.putExtra("result", editTextActivityFifth.getText().toString());
+                setResult(RESULT_OK, resultIntent);
+                finish();
+            }
         });
 
         buttonSave.setOnClickListener(view -> {

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_button_services">16dp</dimen>
+    <dimen name="size_text_all_services">30dp</dimen>
+    <dimen name="height_panel_services">48dp</dimen>
+    <dimen name="width_recycler_menu">16dp</dimen>
+    <dimen name="height_recycler_menu">30dp</dimen>
+    <dimen name="size_main_img_advertising">92dp</dimen>
+</resources>
