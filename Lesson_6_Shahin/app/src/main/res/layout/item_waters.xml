@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="16dp">
+
+        <include
+            android:id="@+id/viewIndications"
+            layout="@layout/view_indications"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewIndications"
+            android:layout_marginTop="26dp"
+            android:text="@string/new_indications"
+            android:textColor="@color/warm_grey_two"
+            android:textSize="12sp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/editTextWaters"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_marginEnd="22dp"
+            android:layout_toStartOf="@+id/imageButtonLaunchWaters"
+            android:hint="@string/hint_indication"
+            android:imeOptions="actionDone"
+            android:inputType="phone"
+            android:lines="1" />
+
+        <ImageButton
+            android:id="@+id/imageButtonLaunchWaters"
+            android:layout_width="@dimen/size_button_item_waters"
+            android:layout_height="@dimen/size_button_item_waters"
+            android:layout_alignBottom="@+id/editTextWaters"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/selector_btn"
+            android:src="@drawable/ic_send" />
+
+        <TextView
+            android:id="@+id/textViewInfoWaters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextWaters"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="2dp"
+            android:drawablePadding="7dp"
+            android:fontFamily="sans-serif"
+            android:textSize="12sp"
+            tools:drawableStart="@drawable/ic_alert"
+            tools:text="Необходимо подать показания до 25.03.18"
+            tools:textColor="@color/coral" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

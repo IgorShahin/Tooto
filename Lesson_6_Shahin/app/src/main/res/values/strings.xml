@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Lesson_6_Shahin</string>
+    <string name="title_one">Item one</string>
+    <string name="title_two">Item two</string>
+    <string name="title_three">Item three</string>
+    <string name="title_fragment_one">Фрагмент 1</string>
+    <string name="show_banner">Показать баннер</string>
+    <string name="text_view_pager">Картинка %1$s</string>
+    <string name="collapse_banner">Свернуть баннер</string>
+    <string name="hint_indication">35</string>
+    <string name="new_indications">Новые показания</string>
+    <string name="title_night">Ночь</string>
+    <string name="title_daytime">День</string>
+    <string name="title_peak">Пик</string>
+    <string name="text_launch">Daytime: %1$s \n Night: %2$s \n Peak: %3$s</string>
+    <string name="g1_item1">g1.item1</string>
+    <string name="g1_item2">g1.item2</string>
+    <string name="g2_item1">g2.item1</string>
+    <string name="g2_item2">g2.item2</string>
+</resources>

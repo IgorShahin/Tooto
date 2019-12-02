@@ -29,12 +29,14 @@ public class DetailInfoViewHolder extends RecyclerView.ViewHolder {
         this.onClickListener = onClickListener;
     }
 
-    public void bind(DetailInfoItem item, Context context) {
+    public void bind(DetailInfoItem item) {
         imageDetailInfo.setImageDrawable(item.getDrawableImage());
         textViewTitleDetail.setText(item.getTextTitle());
         textViewInfoDetail.setText(item.getTextInfo());
         if (item.isTextInfoWarning()) {
-            textViewInfoDetail.setTextColor(context.getResources().getColor(R.color.coral));
+            textViewInfoDetail.setTextColor(textViewInfoDetail.getResources().getColor(R.color.coral));
+        }else{
+
         }
 
         cardViewDetail.setOnClickListener(view -> onClickListener.onItemClick(textViewTitleDetail.getText().toString()));

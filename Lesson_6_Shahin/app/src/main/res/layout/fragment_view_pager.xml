@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearPager"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="16dp">
+
+    <ImageView
+        android:id="@+id/imageViewImagePager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/img_1" />
+
+    <TextView
+        android:id="@+id/textViewTitlePager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="27dp"
+        android:fontFamily="sans-serif-medium"
+        tools:text="@string/text_view_pager"
+        android:textColor="@color/charcoal_grey"
+        android:textSize="16sp" />
+
+</LinearLayout>

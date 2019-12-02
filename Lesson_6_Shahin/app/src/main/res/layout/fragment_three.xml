@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pale_grey_two">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="?android:attr/windowBackground"
+        app:title="@string/title_three" />
+
+    <Button
+        android:id="@+id/buttonBanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/selector_btn"
+        android:fontFamily="sans-serif-medium"
+        android:paddingLeft="36dp"
+        android:paddingTop="13dp"
+        android:paddingRight="36dp"
+        android:paddingBottom="13dp"
+        android:text="@string/show_banner"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="normal" />
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_below="@+id/buttonBanner"
+        android:layout_marginTop="39dp"
+        android:visibility="gone" />
+
+    <com.rd.PageIndicatorView
+        android:id="@+id/pageIndicatorView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewPager"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        app:piv_autoVisibility="false"
+        app:piv_padding="8dp"
+        app:piv_radius="3dp"
+        app:piv_selectedColor="@color/charcoal_grey"
+        app:piv_unselectedColor="@color/pinkish_grey"
+        app:piv_viewPager="@id/viewPager" />
+
+</RelativeLayout>

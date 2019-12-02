@@ -23,9 +23,4 @@
         <item name="fontFamily">sans-serif-medium</item>
         <item name="android:textStyle">normal</item>
     </style>
-
-    <style name="SelectableItemBackground">
-        <item name="android:colorControlHighlight" tools:targetApi="lollipop">#5677FC</item>
-        <item name="android:background">?attr/selectableItemBackground</item>
-    </style>
 </resources>

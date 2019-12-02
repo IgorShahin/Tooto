@@ -37,6 +37,8 @@ public class BaseInfoViewHolder extends RecyclerView.ViewHolder {
 
         if (textViewInfoBase.getText() == "") {
             textViewInfoBase.setVisibility(View.GONE);
+        }else{
+            textViewInfoBase.setVisibility(View.VISIBLE);
         }
         cardViewBase.setOnClickListener(view -> onClickListener.onItemClick(textViewTitleBase.getText().toString()));
     }

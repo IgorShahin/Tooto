@@ -54,7 +54,7 @@ public class SixthActivity extends AppCompatActivity {
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(SixthActivity.this);
         linearLayoutManager.setOrientation(RecyclerView.VERTICAL);
         recyclerAdvertising.setLayoutManager(linearLayoutManager);
-        recyclerAdvertising.addItemDecoration(new ItemDecoration(20));
+        recyclerAdvertising.addItemDecoration(new ItemDecoration(8));
         categoriesAdapter.setOnClickListener(text -> Snackbar.make(coordinatorLayout, text, Snackbar.LENGTH_SHORT).show());
         recyclerAdvertising.setAdapter(categoriesAdapter);
     }

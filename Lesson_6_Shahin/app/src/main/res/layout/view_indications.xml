@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageViewIndication"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ic_water_cold" />
+
+    <TextView
+        android:id="@+id/textViewIndicationTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/charcoal_grey"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/imageViewIndication"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Холодная вода" />
+
+    <ImageView
+        android:id="@+id/imageViewCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_serial_number"
+        app:layout_constraintStart_toEndOf="@+id/imageViewIndication"
+        app:layout_constraintTop_toBottomOf="@+id/textViewIndicationTitle" />
+
+    <TextView
+        android:id="@+id/textViewCodeIndication"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="1dp"
+        android:textColor="@color/greyish_brown_three"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/imageViewCode"
+        app:layout_constraintTop_toBottomOf="@+id/textViewIndicationTitle"
+        tools:text="54656553" />
+
+    <ImageButton
+        android:id="@+id/imageButtonMoreIndication"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_more"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButtonInfoIndication"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="20dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_info"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonMoreIndication"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

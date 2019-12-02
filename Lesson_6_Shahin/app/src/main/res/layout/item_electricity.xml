@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="20dp">
+
+        <include
+            android:id="@+id/viewIndications"
+            layout="@layout/view_indications"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textViewDaytime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewIndications"
+            android:layout_marginTop="20dp"
+            android:text="@string/title_daytime"
+            android:textColor="@color/warm_grey_two"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/editTextDaytime"
+            app:layout_constraintTop_toBottomOf="@+id/viewIndications" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/editTextDaytime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_indication"
+            android:imeOptions="actionDone"
+            android:inputType="phone"
+            android:lines="1"
+            app:layout_constraintEnd_toStartOf="@+id/editTextNight"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewDaytime" />
+
+        <TextView
+            android:id="@+id/textViewNight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewIndications"
+            android:layout_marginTop="20dp"
+            android:text="@string/title_night"
+            android:textColor="@color/warm_grey_two"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/editTextNight"
+            app:layout_constraintTop_toBottomOf="@+id/viewIndications" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/editTextNight"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:hint="@string/hint_indication"
+            android:imeOptions="actionDone"
+            android:inputType="phone"
+            android:lines="1"
+            app:layout_constraintEnd_toStartOf="@+id/editTextPeak"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/editTextDaytime"
+            app:layout_constraintTop_toBottomOf="@+id/textViewNight" />
+
+        <TextView
+            android:id="@+id/textViewPeak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewIndications"
+            android:layout_marginTop="20dp"
+            android:text="@string/title_peak"
+            android:textColor="@color/warm_grey_two"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/editTextPeak"
+            app:layout_constraintTop_toBottomOf="@+id/viewIndications" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/editTextPeak"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="11dp"
+            android:hint="@string/hint_indication"
+            android:imeOptions="actionDone"
+            android:inputType="phone"
+            android:lines="1"
+            app:layout_constraintEnd_toStartOf="@+id/imageButtonLaunchElectricity"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/editTextNight"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPeak" />
+
+        <ImageButton
+            android:id="@+id/imageButtonLaunchElectricity"
+            android:layout_width="@dimen/size_button_item_waters"
+            android:layout_height="@dimen/size_button_item_waters"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/selector_btn"
+            android:src="@drawable/ic_send"
+            app:layout_constraintBottom_toBottomOf="@+id/editTextPeak"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewInfoElectricity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="5dp"
+            android:drawablePadding="7dp"
+            android:fontFamily="sans-serif"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/editTextDaytime"
+            app:layout_constraintTop_toBottomOf="@+id/editTextDaytime"
+            tools:drawableStart="@drawable/ic_alert"
+            tools:text="Необходимо подать показания до 25.03.18"
+            tools:textColor="@color/coral" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

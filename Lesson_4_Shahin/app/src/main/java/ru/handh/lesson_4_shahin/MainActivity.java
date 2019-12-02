@@ -69,15 +69,15 @@ public class MainActivity extends AppCompatActivity {
         recyclerBaseInfo.setHasFixedSize(true);
         GridLayoutManager gridLayoutManager = new GridLayoutManager(MainActivity.this, GRID_SPAN_COUNT_TWO);
         recyclerBaseInfo.setLayoutManager(gridLayoutManager);
-        CategoriesAdapter categoriesAdapter = new CategoriesAdapter(getCategoriesDetail(), this);
+        CategoriesAdapter categoriesAdapter = new CategoriesAdapter(getCategoriesDetail());
         gridLayoutManager.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {
             @Override
             public int getSpanSize(int position) {
                 switch (categoriesAdapter.getItemViewType(position)) {
-                    case DetailInfoItem.LINE_TYPE: {
+                    case CategoriesAdapter.LINE_TYPE: {
                         return GRID_SPAN_COUNT_TWO;
                     }
-                    case DetailInfoItem.GRID_TYPE: {
+                    case CategoriesAdapter.GRID_TYPE: {
                         return GRID_SPAN_COUNT_ONE;
                     }
                     default:
@@ -91,17 +91,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public ArrayList<DetailInfoItem> getCategoriesDetail() {
-        detailInfoItemList.add(new DetailInfoItem(DetailInfoItem.GRID_TYPE, getResources().getDrawable(R.drawable.ic_bill), getString(R.string.title_receipt), getString(R.string.info_receipt), true));
-        detailInfoItemList.add(new DetailInfoItem(DetailInfoItem.GRID_TYPE, getResources().getDrawable(R.drawable.ic_counter), getString(R.string.title_meter), getString(R.string.info_meter), true));
-        detailInfoItemList.add(new DetailInfoItem(DetailInfoItem.GRID_TYPE, getResources().getDrawable(R.drawable.ic_installment), getString(R.string.title_installment_plan), getString(R.string.info_installment_plan), false));
-        detailInfoItemList.add(new DetailInfoItem(DetailInfoItem.GRID_TYPE, getResources().getDrawable(R.drawable.ic_insurance), getString(R.string.title_insurance), getString(R.string.info_insurance), false));
-        detailInfoItemList.add(new DetailInfoItem(DetailInfoItem.GRID_TYPE, getResources().getDrawable(R.drawable.ic_tv), getString(R.string.title_internet_and_tv), getString(R.string.info_internet_and_tv), false));
-        detailInfoItemList.add(new DetailInfoItem(DetailInfoItem.GRID_TYPE, getResources().getDrawable(R.drawable.ic_homephone), getString(R.string.title_intercom), getString(R.string.info_intercom), false));
-        detailInfoItemList.add(new DetailInfoItem(DetailInfoItem.LINE_TYPE, getResources().getDrawable(R.drawable.ic_guard), getString(R.string.title_security), getString(R.string.info_security), false));
+        detailInfoItemList.add(new DetailInfoItem(getResources().getDrawable(R.drawable.ic_bill), getString(R.string.title_receipt), getString(R.string.info_receipt), true));
+        detailInfoItemList.add(new DetailInfoItem(getResources().getDrawable(R.drawable.ic_counter), getString(R.string.title_meter), getString(R.string.info_meter), true));
+        detailInfoItemList.add(new DetailInfoItem(getResources().getDrawable(R.drawable.ic_installment), getString(R.string.title_installment_plan), getString(R.string.info_installment_plan), false));
+        detailInfoItemList.add(new DetailInfoItem(getResources().getDrawable(R.drawable.ic_insurance), getString(R.string.title_insurance), getString(R.string.info_insurance), false));
+        detailInfoItemList.add(new DetailInfoItem(getResources().getDrawable(R.drawable.ic_tv), getString(R.string.title_internet_and_tv), getString(R.string.info_internet_and_tv), false));
+        detailInfoItemList.add(new DetailInfoItem(getResources().getDrawable(R.drawable.ic_homephone), getString(R.string.title_intercom), getString(R.string.info_intercom), false));
+        detailInfoItemList.add(new DetailInfoItem(getResources().getDrawable(R.drawable.ic_guard), getString(R.string.title_security), getString(R.string.info_security), false));
 
-        detailInfoItemList.add(new DetailInfoItem(DetailInfoItem.LINE_TYPE, getResources().getDrawable(R.drawable.ic_uk_contacts), getString(R.string.title_contacts), null, false));
-        detailInfoItemList.add(new DetailInfoItem(DetailInfoItem.LINE_TYPE, getResources().getDrawable(R.drawable.ic_request), getString(R.string.title_my_application), null, false));
-        detailInfoItemList.add(new DetailInfoItem(DetailInfoItem.LINE_TYPE, getResources().getDrawable(R.drawable.ic_about), getString(R.string.title_memo), null, false));
+        detailInfoItemList.add(new DetailInfoItem(getResources().getDrawable(R.drawable.ic_uk_contacts), getString(R.string.title_contacts), null, false));
+        detailInfoItemList.add(new DetailInfoItem(getResources().getDrawable(R.drawable.ic_request), getString(R.string.title_my_application), null, false));
+        detailInfoItemList.add(new DetailInfoItem(getResources().getDrawable(R.drawable.ic_about), getString(R.string.title_memo), null, false));
 
         return detailInfoItemList;
     }
